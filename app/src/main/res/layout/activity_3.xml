@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity3">
+    <ImageView
+        android:layout_width="221sp"
+        android:layout_height="166sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90sp"
+        android:src="@drawable/activity3"/>
+
+    <TextView
+
+        android:layout_width="318sp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="90sp"
+        android:text="To continue please login"
+        android:layout_marginBottom="30sp"
+        android:textSize="25sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginBottom="30sp"
+        android:gravity="center">
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="146sp"
+        android:layout_height="52sp"
+        android:layout_marginRight="20sp"
+        android:text="Login"
+        android:onClick="Login"
+        android:backgroundTint="#E36168"
+        />
+    <Button
+        android:layout_marginLeft="20sp"
+        android:id="@+id/Signup"
+        android:layout_width="146sp"
+        android:layout_height="52sp"
+        android:text="Signup"
+        android:onClick="signup"
+        android:backgroundTint="#E36168"
+        />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/guestlogin"
+        android:layout_gravity="center"
+        android:layout_width="339sp"
+        android:layout_height="48sp"
+        android:text="Continue without Login"
+        android:backgroundTint="#E36168"
+        />
+
+
+</LinearLayout>

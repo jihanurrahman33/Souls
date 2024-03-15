@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".donor_info">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_marginTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:text="Soul"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageButton
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+            android:scaleType="fitCenter"
+            android:layout_width="120sp"
+            android:layout_height="50sp"
+            android:background="@null"
+            android:backgroundTint="@null"
+            android:src="@drawable/rinfo"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="50sp"
+                    android:layout_height="60sp"
+                    android:layout_margin="2sp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/notification_icon" />
+
+                <ImageButton
+                    android:layout_width="50sp"
+                    android:layout_height="60sp"
+                    android:layout_margin="2sp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/share_icn" />
+
+                <ImageView
+                    android:id="@+id/menuIcon"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="4dp"
+                    android:contentDescription="Menu_Icon"
+                    android:src="@drawable/ic_menu" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_margin="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="385sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/donor_info_layout">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipient Info"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginLeft="100sp"
+                />
+            <ImageView
+                android:layout_marginLeft="15sp"
+                android:layout_width="73sp"
+                android:layout_height="74sp"
+                android:src="@drawable/manicon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="20sp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="40sp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="1dp"/>
+
+
+                <EditText
+                    android:id="@+id/myEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MD.**********"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="1dp"/>
+
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="22"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="1dp"/>
+
+
+                <EditText
+                    android:id="@+id/bgroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="A+"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="1dp"/>
+
+
+                <EditText
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ashulia"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="1dp"/>
+
+
+                <EditText
+                    android:id="@+id/Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="018*********"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/confirm"
+            android:backgroundTint="@color/btncolor"
+            android:layout_width="146sp"
+            android:layout_height="52sp"
+            android:layout_marginRight="10sp"
+            android:text="Donate"/>
+
+        <Button
+            android:id="@+id/back"
+            android:backgroundTint="@color/btncolor"
+            android:layout_marginLeft="10sp"
+            android:layout_width="146sp"
+            android:layout_height="52sp"
+            android:text="Back"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:background="@drawable/radius_pink"
+        android:layout_width="309sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp"
+        android:layout_height="66sp">
+        <LinearLayout
+            android:layout_marginTop="1sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="45sp"
+                    android:layout_height="44sp"
+                    android:src="@drawable/icn_forum"
+                    android:scaleType="fitCenter"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forum"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="30sp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="45sp"
+                    android:layout_height="44sp"
+                    android:src="@drawable/icn_home"
+                    android:scaleType="fitCenter"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="30sp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="45sp"
+                    android:layout_height="44sp"
+                    android:src="@drawable/icn_user_info"
+                    android:scaleType="fitCenter"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Info"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

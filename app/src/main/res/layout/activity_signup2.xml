@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup1">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="141sp"
+        android:layout_gravity="center"
+        android:src="@drawable/login_activity"/>
+    <ImageView
+        android:layout_marginTop="40sp"
+        android:layout_marginBottom="30sp"
+        android:layout_width="104sp"
+        android:layout_gravity="center"
+        android:layout_height="124sp"
+        android:src="@drawable/login_act_2"/>
+    <TextView
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Please Create a Password"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    <EditText
+        android:layout_marginTop="10sp"
+        android:layout_width="317sp"
+        android:layout_height="46sp"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:text="Please Enter a Password: "/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginRight="10sp"
+            android:layout_width="146sp"
+            android:layout_height="52sp"
+            android:text="Confirm"
+            android:id="@+id/Confirm"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/btncolor"/>
+        <Button
+            android:layout_marginLeft="10sp"
+            android:layout_width="146sp"
+            android:layout_height="52sp"
+            android:text="Skip"
+            android:backgroundTint="@color/btncolor"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

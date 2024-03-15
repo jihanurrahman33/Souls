@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_activity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_activity"/>
+    <ImageView
+        android:layout_width="104sp"
+        android:layout_height="124sp"
+        android:layout_gravity="center"
+        android:src="@drawable/login_act_2"/>
+    <TextView
+        android:textSize="25sp"
+        android:layout_marginTop="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select your login method"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20sp"
+        />
+
+    <EditText
+
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="317sp"
+        android:layout_height="46sp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:text="Enter Phone/Mail Here:"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="317sp"
+        android:layout_height="46sp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:text="Enter Password"
+        android:inputType="textPassword" />
+    <Button
+
+        android:layout_width="146sp"
+        android:layout_height="52sp"
+        android:text="Login"
+        android:id="@+id/act3_btn_login"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:backgroundTint="#E36168"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        />
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_marginRight="10sp"
+            android:src="@drawable/google_icn"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:layout_width="52sp"
+            android:layout_height="52sp"/>
+        <ImageButton
+            android:layout_marginRight="10sp"
+            android:layout_width="52sp"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:src="@drawable/fb_icn"
+            android:layout_height="52sp"/>
+        <ImageButton
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:src="@drawable/twitter_icn"
+            android:layout_width="52sp"
+            android:layout_height="52sp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
