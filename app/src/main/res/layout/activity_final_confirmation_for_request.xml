@@ -37,7 +37,7 @@
             android:layout_height="50sp"
             android:background="@null"
             android:backgroundTint="@null"
-            android:src="@drawable/dinfo"/>
+            android:src="@drawable/rinfo"/>
 
 
         <RelativeLayout
@@ -91,127 +91,118 @@
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:background="@android:color/black"/>
-   <LinearLayout
-       android:paddingBottom="105sp"
-       android:gravity="center"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="vertical">
-
-
-       <LinearLayout
-           android:paddingTop="60sp"
-           android:layout_width="wrap_content"
-           android:layout_height="match_parent">
-           <ImageButton
-               android:id="@+id/request"
-               android:onClick="request"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:background="@null"
-               android:src="@drawable/request">
-
-           </ImageButton>
-       </LinearLayout>
-
-
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_gravity="center"
-           android:gravity="center"
-           android:paddingTop="60sp">
-
-           <ImageButton
-               android:id="@+id/donate"
-               android:onClick="donate"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:src="@drawable/donate"
-               android:background="@null">
-
-           </ImageButton>
-       </LinearLayout>
-
-
-   </LinearLayout>
 
     <LinearLayout
 
+        android:orientation="vertical"
+        android:layout_width="385sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_marginBottom="20sp"
+            android:layout_width="213sp"
+            android:layout_height="191sp"
+            android:layout_gravity="center"
+            android:src="@drawable/final_confirm_page_img1"/>
+        <TextView
+            android:layout_marginBottom="110sp"
+            android:layout_width="338sp"
+            android:layout_height="145sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="@string/we_received_your_request_we_ll_contact_you_as_soon_as_we_find_a_doner"/>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="15sp"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="Home"
+            android:id="@+id/Home"
+            android:backgroundTint="@color/btncolor"
+            android:layout_width="146sp"
+            android:layout_height="52sp"
+            android:layout_marginRight="10sp"
+            android:text="Home"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:background="@drawable/radius_pink"
         android:layout_width="309sp"
-        android:layout_height="100dp"
+        android:gravity="center"
         android:layout_gravity="center"
         android:layout_marginTop="15sp"
-        android:background="@drawable/radius_pink"
-        android:gravity="center">
-
+        android:layout_height="66sp">
         <LinearLayout
+            android:layout_marginTop="1sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1sp">
+            android:layout_height="wrap_content">
 
             <LinearLayout
 
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
                 <ImageButton
                     android:layout_width="45sp"
                     android:layout_height="44sp"
-                    android:background="@null"
+                    android:src="@drawable/icn_forum"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/icn_forum" />
-
+                    android:background="@null"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Forum" />
+                    android:text="Forum"/>
             </LinearLayout>
-
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginLeft="30sp"
-                android:orientation="vertical">
-
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
                 <ImageButton
                     android:layout_width="45sp"
                     android:layout_height="44sp"
-                    android:background="@null"
+                    android:src="@drawable/icn_home"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/icn_home" />
-
+                    android:background="@null"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Home" />
+                    android:text="Home"/>
             </LinearLayout>
-
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginLeft="30sp"
-                android:orientation="vertical">
-
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
                 <ImageButton
                     android:layout_width="45sp"
                     android:layout_height="44sp"
-                    android:background="@null"
+                    android:src="@drawable/icn_user_info"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/icn_user_info" />
-
+                    android:background="@null"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="User Info" />
+                    android:text="User Info"/>
             </LinearLayout>
 
         </LinearLayout>
 
 
+
     </LinearLayout>
-
-
 
 </LinearLayout>

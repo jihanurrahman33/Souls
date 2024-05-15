@@ -10,28 +10,22 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class flow1_homepage extends AppCompatActivity {
+public class final_confirmation_for_request extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.flow1_homepage);
+        setContentView(R.layout.activity_final_confirmation_for_request);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
     }
-    public void request(View view)
+    public void Home(View view)
     {
-        Intent intent=new Intent(flow1_homepage.this,user_info_form_for_home_request_btn.class);
+        Intent intent=new Intent(final_confirmation_for_request.this,flow1_homepage.class);
         startActivity(intent);
     }
-    public void donate(View view)
-    {
-        Intent intent=new Intent(flow1_homepage.this,user_info_form_for_home_request_btn.class);
-        startActivity(intent);
-    }
-
 }

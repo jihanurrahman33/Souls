@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Souls"
         tools:targetApi="31">
         <activity
+            android:name=".donate_confirmation_ui"
+            android:exported="false" />
+        <activity
+            android:name=".final_confirmation_for_request"
+            android:exported="false" />
+        <activity
+            android:name=".user_info_form_for_home_request_btn"
+            android:exported="false" />
+        <activity
             android:name=".flow1_homepage"
             android:exported="false" />
         <activity
