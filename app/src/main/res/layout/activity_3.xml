@@ -32,6 +32,7 @@
         android:layout_marginBottom="30sp"
         android:gravity="center">
     <Button
+
         android:id="@+id/Login"
         android:layout_width="146sp"
         android:layout_height="52sp"
@@ -52,6 +53,7 @@
 
     </LinearLayout>
     <Button
+        android:onClick="guestlogin"
         android:id="@+id/guestlogin"
         android:layout_gravity="center"
         android:layout_width="339sp"

@@ -42,14 +42,17 @@
         android:layout_marginTop="50sp"
         android:gravity="center"
         android:orientation="horizontal">
+
         <Button
-            android:layout_marginRight="10sp"
+            android:id="@+id/Confirm"
             android:layout_width="146sp"
             android:layout_height="52sp"
-            android:text="Confirm"
-            android:id="@+id/Confirm"
             android:layout_gravity="center"
-            android:backgroundTint="@color/btncolor"/>
+            android:layout_marginRight="10sp"
+            android:backgroundTint="@color/btncolor"
+            android:onClick="Confirm"
+            android:text="Confirm" />
+
         <Button
             android:layout_marginLeft="10sp"
             android:layout_width="146sp"

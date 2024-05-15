@@ -45,11 +45,11 @@
         android:text="Enter Password"
         android:inputType="textPassword" />
     <Button
-
+        android:onClick="Login"
         android:layout_width="146sp"
         android:layout_height="52sp"
         android:text="Login"
-        android:id="@+id/act3_btn_login"
+        android:id="@+id/Login"
         android:layout_marginTop="20sp"
         android:layout_gravity="center"
         android:backgroundTint="#E36168"/>

@@ -182,6 +182,7 @@
         android:orientation="horizontal"
         android:layout_height="wrap_content">
         <Button
+            android:onClick="confirm"
             android:id="@+id/confirm"
             android:backgroundTint="@color/btncolor"
             android:layout_width="146sp"

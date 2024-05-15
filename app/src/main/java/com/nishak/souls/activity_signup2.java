@@ -1,6 +1,8 @@
 package com.nishak.souls;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,10 @@ public class activity_signup2 extends AppCompatActivity {
             return insets;
         });
     }
+    public void Confirm(View view)
+    {
+        Intent intent=new Intent(activity_signup2.this,form_red.class);
+        startActivity(intent);
+    }
+
 }

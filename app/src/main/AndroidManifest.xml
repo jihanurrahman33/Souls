@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Souls"
         tools:targetApi="31">
         <activity
+            android:name=".flow1_homepage"
+            android:exported="false" />
+        <activity
             android:name=".form_red"
             android:exported="false" />
         <activity

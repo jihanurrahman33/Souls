@@ -32,4 +32,9 @@ public class activity3 extends AppCompatActivity {
         Intent intent=new Intent(activity3.this,signup1.class);
         startActivity(intent);
     }
+    public void guestlogin(View view)
+    {
+        Intent intent=new Intent(activity3.this, flow1_homepage.class);
+        startActivity(intent);
+    }
 }
