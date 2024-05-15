@@ -3,4 +3,6 @@
     <string name="thank_you">For your response. The recipient will contact you soon.You can also contact the recipient through the number given in the information section. Keep up the good work</string>
     <string name="lay2">We’ll contact the doner and manage everything.You can also contact the doner using given info.</string>
     <string name="we_received_your_request_we_ll_contact_you_as_soon_as_we_find_a_doner">We received your request. We’ll contact you as soon as we find a doner.</string>
+    <string name="thanks_we_ll_let_you_know_if_anyone_needs_your_help">Thanks.We’ll let you know if anyone needs your help.</string>
+    <string name="write_here">Write Here...</string>
 </resources>

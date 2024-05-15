@@ -103,20 +103,34 @@
             android:layout_width="213sp"
             android:layout_height="191sp"
             android:layout_gravity="center"
-            android:src="@drawable/donate_confirmation_img"/>
-        <TextView
-            android:layout_marginBottom="110sp"
-            android:layout_width="338sp"
-            android:layout_height="145sp"
+            android:src="@drawable/forum_home_img1"/>
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingBottom="150sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="25sp"
-            android:text="@string/thanks_we_ll_let_you_know_if_anyone_needs_your_help"/>
+            android:layout_height="match_parent">
 
-
-
-
-
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="350sp"
+                android:layout_height="100sp"
+                android:layout_gravity="center"
+                android:background="#E4F7FA"
+                android:hint="@string/write_here" />
+        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_marginBottom="15sp"
@@ -127,16 +141,23 @@
         android:orientation="horizontal"
         android:layout_height="wrap_content">
         <Button
-            android:onClick="Home"
-            android:id="@+id/Home"
+            android:onClick="goback"
+            android:id="@+id/goback"
             android:backgroundTint="@color/btncolor"
             android:layout_width="146sp"
             android:layout_height="52sp"
             android:layout_marginRight="10sp"
-            android:text="Home"/>
+            android:text="Post"/>
+        <Button
+            android:layout_width="146sp"
+            android:layout_height="52sp"
+            android:backgroundTint="@color/btncolor"
+            android:text="Discard"/>
 
 
     </LinearLayout>
+
+
     <LinearLayout
 
         android:background="@drawable/radius_pink"
@@ -204,5 +225,7 @@
 
 
     </LinearLayout>
+
+
 
 </LinearLayout>

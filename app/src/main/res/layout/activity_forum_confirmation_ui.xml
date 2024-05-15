@@ -103,7 +103,7 @@
             android:layout_width="213sp"
             android:layout_height="191sp"
             android:layout_gravity="center"
-            android:src="@drawable/donate_confirmation_img"/>
+            android:src="@drawable/forum_confirm_img"/>
         <TextView
             android:layout_marginBottom="110sp"
             android:layout_width="338sp"
@@ -111,7 +111,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:textSize="25sp"
-            android:text="@string/thanks_we_ll_let_you_know_if_anyone_needs_your_help"/>
+            android:text="Posted on forum!"/>
 
 
 
@@ -127,13 +127,13 @@
         android:orientation="horizontal"
         android:layout_height="wrap_content">
         <Button
-            android:onClick="Home"
-            android:id="@+id/Home"
+            android:onClick="goback"
+            android:id="@+id/goback"
             android:backgroundTint="@color/btncolor"
             android:layout_width="146sp"
             android:layout_height="52sp"
             android:layout_marginRight="10sp"
-            android:text="Home"/>
+            android:text="Go Back"/>
 
 
     </LinearLayout>
