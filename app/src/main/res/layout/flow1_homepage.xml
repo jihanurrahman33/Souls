@@ -52,6 +52,8 @@
                 android:layout_height="wrap_content">
 
                 <ImageButton
+                    android:id="@+id/notification"
+                    android:onClick="notification"
                     android:layout_width="50sp"
                     android:layout_height="60sp"
                     android:layout_margin="2sp"
@@ -157,6 +159,8 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:onClick="forum"
+                    android:id="@+id/forum_btn"
                     android:layout_width="45sp"
                     android:layout_height="44sp"
                     android:background="@null"
@@ -176,6 +180,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/home_btn"
                     android:layout_width="45sp"
                     android:layout_height="44sp"
                     android:background="@null"
@@ -195,6 +200,8 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:onClick="user_info"
+                    android:id="@+id/userinfo_btn"
                     android:layout_width="45sp"
                     android:layout_height="44sp"
                     android:background="@null"

@@ -95,71 +95,184 @@
     <LinearLayout
 
         android:orientation="vertical"
+        android:backgroundTint="#FAE4E5"
         android:layout_width="385sp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <ImageView
-            android:layout_marginBottom="20sp"
-            android:layout_width="213sp"
-            android:layout_height="191sp"
-            android:layout_gravity="center"
-            android:src="@drawable/forum_home_img1"/>
-
-
-
-
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:paddingBottom="150sp"
+        android:layout_height="490sp"
         android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:background="@drawable/donor_info_layout">
 
-        <com.google.android.material.textfield.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="350sp"
-                android:layout_height="100sp"
-                android:layout_gravity="center"
-                android:background="#E4F7FA"
-                android:hint="@string/write_here" />
-        </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100sp"
+                android:gravity="center"
+                android:text="User Info"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="73sp"
+                android:layout_height="74sp"
+                android:layout_marginLeft="15sp"
+                android:src="@drawable/manicon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="20sp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="40sp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="1dp"/>
+
+
+                <EditText
+                    android:id="@+id/myEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MD.**********"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="1dp"/>
+
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="22"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="1dp"/>
+
+
+                <EditText
+                    android:id="@+id/bgroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="A+"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="1dp"/>
+
+
+                <EditText
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ashulia"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginBottom="1dp"/>
+
+
+                <EditText
+                    android:id="@+id/Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="018*********"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
     </LinearLayout>
     <LinearLayout
-        android:layout_marginBottom="15sp"
         android:layout_marginTop="20sp"
         android:gravity="center"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:orientation="horizontal"
         android:layout_height="wrap_content">
-        <Button
-            android:onClick="post"
-            android:id="@+id/post"
-            android:backgroundTint="@color/btncolor"
-            android:layout_width="146sp"
-            android:layout_height="52sp"
-            android:layout_marginRight="10sp"
-            android:text="Post"/>
-        <Button
-            android:id="@+id/discard"
-            android:onClick="discard"
-            android:layout_width="146sp"
-            android:layout_height="52sp"
-            android:backgroundTint="@color/btncolor"
-            android:text="Discard"/>
 
 
+        <Button
+            android:onClick="back"
+            android:id="@+id/back"
+            android:backgroundTint="@color/btncolor"
+            android:layout_marginLeft="10sp"
+            android:layout_width="146sp"
+            android:layout_height="52sp"
+            android:text="Go Back"/>
     </LinearLayout>
-
-
     <LinearLayout
 
         android:background="@drawable/radius_pink"
@@ -227,7 +340,5 @@
 
 
     </LinearLayout>
-
-
 
 </LinearLayout>

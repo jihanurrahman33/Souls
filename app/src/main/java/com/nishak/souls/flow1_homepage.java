@@ -30,7 +30,22 @@ public class flow1_homepage extends AppCompatActivity {
     }
     public void donate(View view)
     {
-        Intent intent=new Intent(flow1_homepage.this,user_info_form_for_home_request_btn.class);
+        Intent intent=new Intent(flow1_homepage.this,donor_info.class);
+        startActivity(intent);
+    }
+    public void forum(View view)
+    {
+        Intent intent=new Intent(flow1_homepage.this,forum_homepage.class);
+        startActivity(intent);
+    }
+    public void user_info(View view)
+    {
+        Intent intent=new Intent(flow1_homepage.this,user_info.class);
+        startActivity(intent);
+    }
+    public void notification(View view)
+    {
+        Intent intent=new Intent(flow1_homepage.this,notification.class);
         startActivity(intent);
     }
 
